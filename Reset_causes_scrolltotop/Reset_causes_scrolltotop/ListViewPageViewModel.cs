@@ -10,7 +10,7 @@ namespace Reset_causes_scrolltotop
     {
         private static readonly IEnumerable<string> _items = Enumerable.Range(0, 50).Select(num => num.ToString());
 
-        public ObservableCollection<string> Items { get; set; } = new ObservableCollection<string>();
+        public ImprovedObservableCollection<string> Items { get; set; } = new ImprovedObservableCollection<string>();
 
         public ICommand ClearListCommand => new Command(_ => { Items.Clear(); });
 
