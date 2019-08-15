@@ -11,7 +11,7 @@ namespace Reset_causes_scrolltotop
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ListViewPage();
         }
 
         protected override void OnStart()

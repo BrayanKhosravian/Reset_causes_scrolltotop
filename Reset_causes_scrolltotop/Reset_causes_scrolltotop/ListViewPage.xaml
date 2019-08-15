@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reset_causes_scrolltotop.ListViewPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="MyListView"
+                  ItemsSource="{Binding Items}"
+                  CachingStrategy="RecycleElement">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+        <StackLayout Grid.Row="1">
+            <Button Text="CreateListCommand" Command="{Binding CreateListCommand}" />
+            <Button Text="ClearListCommand" Command="{Binding ClearListCommand}" />
+            <Button Text="AddRangeCommand" Command="{Binding AddRangeCommand}" />
+            <Button Text="AddRangeWithCleanCommand" Command="{Binding AddRangeWithCleanCommand}" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
