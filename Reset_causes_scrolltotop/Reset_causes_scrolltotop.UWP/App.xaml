@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Reset_causes_scrolltotop.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Reset_causes_scrolltotop.UWP"
+    RequestedTheme="Light">
+
+</Application>
