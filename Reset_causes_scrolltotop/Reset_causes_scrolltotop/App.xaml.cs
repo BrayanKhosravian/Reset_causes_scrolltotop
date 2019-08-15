@@ -1,5 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -11,7 +10,10 @@ namespace Reset_causes_scrolltotop
         {
             InitializeComponent();
 
-            MainPage = new ListViewPage();
+            var vm = new ListViewPageViewModel();
+            var view = new ListViewPage {BindingContext = vm};
+
+            MainPage = view;
         }
 
         protected override void OnStart()
